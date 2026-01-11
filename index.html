@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UrFirst Step - Production House & Web Development</title>
+    <title>UrFirst Step - Media & Production House</title>
+    <link rel="icon" href="ufs favicon.png" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet"> <!-- Quicksand font link -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> <!-- Montserrat from Google Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> <!-- For icons -->
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> <!-- Replace GA_MEASUREMENT_ID -->
@@ -25,7 +26,7 @@
         }
         
         body {
-            font-family: 'Quicksand', sans-serif; /* Updated to Quicksand */
+            font-family: 'Montserrat', 'Futura', 'Trebuchet MS', Arial, sans-serif; /* Montserrat (Google Fonts) with fallbacks */
             line-height: 1.6;
             color: #000;
             background-color: #fff;
@@ -115,13 +116,13 @@
         /* Sections */
         section {
             padding: 80px 20px;
-            max-width: 1200px;
+            max-width: 1600px;
             margin: 0 auto;
         }
         
         #hero {
-            background: url('hero-image.jpg') no-repeat center center/cover;
-            height: 100vh;
+            background: url('ufsbanner.jpg') no-repeat center center/cover;
+            height: 70vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -131,14 +132,18 @@
         }
         
         #hero h2 {
-            font-size: 3rem;
+            font-size: 5rem;
+            font-family: 'Futura', 'Trebuchet MS', Arial, sans-serif;
             margin-bottom: 10px;
+            color: #fff;
+            text-shadow: #000 2px 2px 4px;
             font-weight: 600; /* Bold for hero heading */
         }
         
         #hero p {
             font-size: 1.2rem;
             margin-bottom: 20px;
+            text-shadow: #000 1px 1px 2px;
         }
         
         .cta-button {
@@ -156,15 +161,15 @@
         }
         
         #about, #services, #portfolio, #testimonials, #contact {
+            text-align: center;
             background: #fff;
-            margin: 20px 0;
+            margin: 20px 30px;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
         }
         
         h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
             color: #000;
             font-weight: 600; /* Bold for section headings */
         }
@@ -177,10 +182,14 @@
         }
         
         .service {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
             text-align: center;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
+            min-height: 240px; /* keep cards consistent height */
         }
         
         .service h3 {
@@ -192,7 +201,29 @@
             color: #e74c3c;
             margin-bottom: 10px;
         }
-        
+
+        .service p {
+            margin: 0 0 16px;
+            line-height: 1.5;
+        }
+
+        .cta-button {
+            background: #e74c3c;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+            display: inline-block;
+            margin-top: 12px;
+            align-self: center;
+        }
+
+        .cta-button:hover {
+            background: #c0392b;
+        }
+
         /* Portfolio */
         .portfolio-grid {
             display: grid;
@@ -298,7 +329,7 @@
 <body>
     <header>
         <nav>
-            <h1><img src="ufs media white.png" alt="urfirststep Logo" style="height:30px;"></h1>
+            <h1><img src="ufs media white.png" alt="urfirststep Logo" style="height: 30px;"></h1>
             <ul id="nav-menu">
                 <li><a href="#about">About</a></li>
                 <li><a href="#services">Services</a></li>
@@ -318,13 +349,13 @@
         <div>
             <h2>Welcome to UrFirst Step</h2>
             <p>Your Production House for Creative Solutions & Web Development</p>
-            <a href="#contact" class="cta-button">Get Started</a>
+            <a href="https://wa.me/+917238935653" class="cta-button">Get Started</a>
         </div>
     </section>
     
     <section id="about">
         <h2>About Us</h2>
-        <p>UrFirst Step is a dynamic production house specializing in media production, from videos to events. Currently, we're channeling our expertise into web development, crafting stunning, functional websites that bring your vision to life. Our mission: To empower businesses with innovative digital solutions.</p>
+        <p>UrFirst Step is a dynamic production house specializing in media production, from videos to events. Currently, we're expanding our expertise from web development, to bring your vision to life.</p>
         <h3>Meet Our Team</h3>
         <p>Our experienced team includes web developers, producers, and designers ready to collaborate on your projects.</p>
     </section>
@@ -336,13 +367,13 @@
                 <i class="fas fa-code"></i>
                 <h3>Web Development</h3>
                 <p>Custom websites, responsive designs, and e-commerce solutions. Includes UI/UX design and SEO optimization.</p>
-                <a href="#contact" class="cta-button">Learn More</a>
+                <a href="https://wa.me/+917238935653" class="cta-button">Get Started</a>
             </div>
             <div class="service">
                 <i class="fas fa-video"></i>
                 <h3>Production Services</h3>
                 <p>Video production, content creation, and event management for brands and businesses.</p>
-                <a href="#contact" class="cta-button">Learn More</a>
+                <a href="https://wa.me/+917238935653" class="cta-button">Get Started</a>
             </div>
         </div>
     </section>
@@ -351,14 +382,19 @@
         <h2>Portfolio</h2>
         <div class="portfolio-grid">
             <div class="portfolio-item">
-                <img src="project1.jpg" alt="E-Commerce Site">
-                <h3>E-Commerce Site</h3>
-                <p>A sleek online store for a local retailer. <a href="#">View Project</a></p>
+                <img src="Project-Gyan-Tarang.png" alt="Educational News Platform">
+                <h3>Educational News Platform</h3>
+                <p>Jharkhan based education website. <a href="Project-Gyan-Tarang.png">View Project</a></p>
             </div>
             <div class="portfolio-item">
-                <img src="project2.jpg" alt="Video Production">
-                <h3>Video Production</h3>
-                <p>Promotional video for a startup. <a href="#">View Project</a></p>
+                <img src="Project-MyTestRank.png" alt="Govt Exam Typing Test website">
+                <h3>Govt Exam Typing Test Website</h3>
+                <p>All Type of Govt Exam Typing Test. <a href="Project-MyTestRank.png">View Project</a></p>
+            </div>
+           <div class="portfolio-item">
+                <img src="Project-MyTestRank.png" alt="Tayari Jeet Ki">
+                <h3>Diploma Based Educational Website</h3>
+                <p>An educational platform for diploma students. <a href="Project-MyTestRank.png">View Project</a></p>
             </div>
         </div>
     </section>
@@ -367,19 +403,19 @@
         <h2>Testimonials</h2>
         <div class="testimonials-slider">
             <div class="testimonial">
-                <p>"UrFirst Step transformed our online presence with a stunning website. Highly recommend!"</p>
-                <cite>- Client A, Retailer</cite>
+                <p>"We are working since we started my website and i am very happy that amit is still connecting with me and he helped my website to grow and earn through ads as i don't know anything about the website but thanks to amit from urfirststep he helped me!"</p>
+                <cite>- Mahendra Ji, Gyan Tarang</cite>
             </div>
             <div class="testimonial">
-                <p>"Their production work is top-notch. Professional and creative team."</p>
-                <cite>- Client B, Startup</cite>
+                <p>"I meet him online last year and we planed to have a website for govt exam aka online typing test he help me to devlop my website and we are working on it."</p>
+                <cite>- Praveen Ji, My Test Rank</cite>
             </div>
         </div>
     </section>
     
     <section id="contact">
         <h2>Contact Us</h2>
-        <form action="https://formspree.io/f/your-form-id" method="POST">
+        <form action="https://formspree.io/f/meeeqjoy" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="tel" name="phone" placeholder="Your Phone">
@@ -387,19 +423,24 @@
                 <option value="">Select Subject</option>
                 <option value="web-dev">Web Development</option>
                 <option value="production">Production Services</option>
+                <option value="production">UGC Ads</option>
                 <option value="other">Other</option>
             </select>
             <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
             <button type="submit">Send Message</button>
         </form>
-        <p>Email: info@urfirststep.com | Phone: (123) 456-7890</p>
+        <p>Email: contact@urfirststep.com | Phone: +91 7238 9356 53</p>
     </section>
     
     <footer>
-        <p>&copy; 2023 urfirststep. All rights reserved.</p>
+        <p>&copy; 2026 UrFirst Step. All rights reserved.</p>
         <div class="social-links">
             <a href="https://www.linkedin.com/company/urfirststep/" target="_blank"><i class="fab fa-linkedin"></i></a>
             <a href="https://instagram.com/urfirststep" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/UrFirstStep360/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.youtube.com/channel/UCHoUGSen0-Rqe1_ztCbT1bQ/featured" target="_blank"><i class="fab fa-youtube"></i></a>
+            <a href="https://x.com/UrFirstStep" target="_blank"><i class="fab fa-x"></i></a>
+            <a href="https://wa.me/+917238935653" target="_blank"><i class="fab fa-whatsapp"></i></a>
         </div>
     </footer>
     
